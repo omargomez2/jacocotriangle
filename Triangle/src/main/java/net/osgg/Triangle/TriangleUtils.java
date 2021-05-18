@@ -28,6 +28,7 @@ public class TriangleUtils {
     		type = "Isósceles";
     	else
     		type = "Escaleno";
+    	
         return type;
     }
 
