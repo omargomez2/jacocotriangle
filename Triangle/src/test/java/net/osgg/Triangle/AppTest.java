@@ -15,38 +15,19 @@ import java.io.PrintStream;
 public class AppTest {
 	
 	@Test
-    public void TC01() {
+    public void TC08() {
     	TriangleUtils t = new TriangleUtils();
-    	String a = "2", b = "2", c = "2";
+    	String a = "4", b = "4", c = "4";
     	assertTrue( t.getTriangleType(a, b, c).equals("Equilatero") );
     }
 	
 	
 	@Test
-    public void TC02() {
+    public void TC09() {
     	TriangleUtils t = new TriangleUtils();
-    	String a = "4", b = "4", c = "2";
+    	String a = "4", b = "4", c = "3";
     	assertTrue( t.getTriangleType(a, b, c).equals("Isósceles") );
     }
-	
-	
-	@Test
-    public void TC03() {
-    	TriangleUtils t = new TriangleUtils();
-    	String a = "4", b = "2", c = "4";
-    	assertTrue( t.getTriangleType(a, b, c).equals("Isósceles") );
-    }
-	
-	
-	
-	@Test
-    public void TC04() {
-    	TriangleUtils t = new TriangleUtils();
-    	String a = "5", b = "3", c = "4";
-    	assertTrue( t.getTriangleType(a, b, c).equals("Escaleno") );
-    }
-	
-	
 	
 	
 }
