@@ -13,6 +13,15 @@ import java.io.PrintStream;
  * Unit test for simple App.
  */
 public class AppTest {
+
+	@Test // CP para verificar clase con main
+    public void TC00() {
+    	PrintStream out = mock(PrintStream.class); //para verificar la salida a consola
+        System.setOut(out);
+        App a = new App();
+        App.main(new String[] {"1","2","3"});
+        verify(out).println(startsWith("los valores ingresados no corresponden"));
+    }
 	
 	@Test
     public void TC08() {
